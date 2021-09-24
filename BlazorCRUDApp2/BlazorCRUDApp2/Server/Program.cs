@@ -10,10 +10,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
+builder.Configuration.AddJsonFile("appsettings1.json", optional: false, reloadOnChange: true);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
-
-builder.Configuration.AddJsonFile("appsettings1.json",optional:false,reloadOnChange:true);
 
 var app = builder.Build();
 
