@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c51662b7-016b-4981-8a50-5b787647a7e2": {
+      "ProjectGuid": "c51662b7-016b-4981-8a50-5b787647a7e2",
+      "DisplayName": "BlazorCRUDApp2.Client",
+      "ColorIndex": 0
+    },
+    "d09f1a0c-683e-466c-bb6d-a695b2a2930b": {
+      "ProjectGuid": "d09f1a0c-683e-466c-bb6d-a695b2a2930b",
+      "DisplayName": "BlazorCRUDApp2.Server",
+      "ColorIndex": 1
+    },
+    "4b7dd2f8-b49a-43e2-9696-ac2c3fd0c085": {
+      "ProjectGuid": "4b7dd2f8-b49a-43e2-9696-ac2c3fd0c085",
+      "DisplayName": "BlazorCRUDApp2.Shared",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
