@@ -1,0 +1,20 @@
+﻿@page "/cars/createcar"
+@inject HttpClient http
+<h3>Create Car</h3>
+
+<EditForm Model="@car" OnValidSubmit="@Create">
+    <div class="form-field">
+        <label>Car Name:</label>
+        <div>
+            <InputText @bind-Value="@car.CarName"></InputText>
+        </div>
+    </div>
+</EditForm>
+
+@code {
+    Car car = new Car();
+    async Task Create()
+    {
+        await http.PostJsonAsync("api/car", car);
+    }
+}

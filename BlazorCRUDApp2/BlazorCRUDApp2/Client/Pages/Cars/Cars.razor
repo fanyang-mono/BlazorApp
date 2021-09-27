@@ -1,0 +1,55 @@
+﻿@page "/Cars"
+@inject HttpClient http
+
+<h3>Cars</h3>
+
+@if (cars == null)
+{
+    <text>Loading...</text>
+}
+else if(cars.Length == 0)
+{
+    <text>No Records Found!</text>
+}
+else
+{
+    <table class="table">
+        <thread>
+            <tr>
+                <th></th>
+                <th>Car ID</th>
+                <th>Car Name</th>
+            </tr>
+        </thread>
+        <tbody>
+            @foreach(var car in cars)
+            {
+                <tr>
+                    <td>
+                        <button class="btn btn-success" style="color:white">Update</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                    <td>@car.id</td>
+                    <td>@car.CarName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    Car[] cars { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadCars();
+    }
+    async Task LoadCars()
+    {
+        cars = await http.GetJsonAsync<Car[]>("api/car");
+        cars = new Car[]
+        {
+            new Car(){ id = 1, CarName = "Honda"};
+        }
+    }
+}

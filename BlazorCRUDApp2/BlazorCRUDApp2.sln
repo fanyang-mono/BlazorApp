@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCRUDApp2.Server", "BlazorCRUDApp2\Server\BlazorCRUDApp2.Server.csproj", "{D09F1A0C-683E-466C-BB6D-A695B2A2930B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorCRUDApp2.Server", "BlazorCRUDApp2\Server\BlazorCRUDApp2.Server.csproj", "{D09F1A0C-683E-466C-BB6D-A695B2A2930B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCRUDApp2.Client", "BlazorCRUDApp2\Client\BlazorCRUDApp2.Client.csproj", "{C51662B7-016B-4981-8A50-5B787647A7E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorCRUDApp2.Client", "BlazorCRUDApp2\Client\BlazorCRUDApp2.Client.csproj", "{C51662B7-016B-4981-8A50-5B787647A7E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCRUDApp2.Shared", "BlazorCRUDApp2\Shared\BlazorCRUDApp2.Shared.csproj", "{4B7DD2F8-B49A-43E2-9696-AC2C3FD0C085}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorCRUDApp2.Shared", "BlazorCRUDApp2\Shared\BlazorCRUDApp2.Shared.csproj", "{4B7DD2F8-B49A-43E2-9696-AC2C3FD0C085}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
