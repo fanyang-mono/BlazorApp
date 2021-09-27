@@ -14,13 +14,13 @@ else if(cars.Length == 0)
 else
 {
     <table class="table">
-        <thread>
+        <thead>
             <tr>
-                <th></th>
+                <th> </th>
                 <th>Car ID</th>
                 <th>Car Name</th>
             </tr>
-        </thread>
+        </thead>
         <tbody>
             @foreach(var car in cars)
             {
@@ -46,10 +46,10 @@ else
     }
     async Task LoadCars()
     {
-        cars = await http.GetJsonAsync<Car[]>("api/car");
+        cars = await http.GetFromJsonAsync<Car[]>("api/car");
         cars = new Car[]
-        {
-            new Car(){ id = 1, CarName = "Honda"};
-        }
+            {
+                new Car(){ id = 1, CarName = "Honda"}
+            };
     }
 }
