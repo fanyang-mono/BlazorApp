@@ -35,6 +35,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+//app.UseEndpoints(endpoints => endpoints.MapGraphQL("/"));
 
 app.MapRazorPages();
 app.MapControllers();
