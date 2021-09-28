@@ -48,8 +48,8 @@ else
     {
         cars = await http.GetFromJsonAsync<Car[]>("api/car");
         cars = new Car[]
-            {
-                new Car(){ id = 1, CarName = "Honda"}
-            };
+                {
+                new Car(){ id = 1, CarName = "Honda"};
+            }
     }
 }
